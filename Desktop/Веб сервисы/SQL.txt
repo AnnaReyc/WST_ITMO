@@ -1,0 +1,16 @@
+CREATE TABLE "animals" (
+ id bigserial NOT NULL,
+ name character varying(200),
+ type character varying(200),
+ class character varying(200),
+ detachment character varying(200),
+ kind character varying(200),
+ CONSTRAINT "animals_pkey" PRIMARY KEY (id)
+);
+Для добавления записей в таблицу следует выполнить:
+INSERT INTO animals(name, type, class, detachment, kind) values ('Кошка', 'Хордовые', 'Млекопитающие', 'Хищные', 'Кошачьи');
+INSERT INTO animals(name, type, class, detachment, kind) values ('Белка', 'Хордовые', 'Млекопитающие', 'Грызуны', 'Беличьи');
+INSERT INTO animals(name, type, class, detachment, kind) values ('Собака', 'Хордовые', 'Млекопитающие', 'Хищные', 'Псовые');
+INSERT INTO animals(name, type, class, detachment, kind) values ('Кролик', 'Хордовые', 'Млекопитающие', 'Грызуны', 'Заячьи');
+INSERT INTO animals(name, type, class, detachment, kind) values ('Еж', 'Хордовые', 'Млекопитающие', 'Насекомоядные', '');
+INSERT INTO animals(name, type, class, detachment, kind) values ('Кит', 'Хордовые', 'Млекопитающие', 'Китообразные', '');
